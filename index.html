@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUD JS</title>
+</head>
+<body>
+
+    <header>
+        <h1>Minha Loja</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de produtos da minha loja.</span>
+        </div>
+
+
+        <div class="card">
+            <div class="lineInput">
+                <label for="">Produto</label>
+                <br>
+                <input type="text" id="produto" placeholder="Nome do produto">
+            </div>
+
+            <div class="lineInput">
+                <label for="">Preço</label>
+                <br>
+                <input type="number" id="preco" placeholder="Valor do produto">
+            </div>
+
+            <div class="btn">
+            <button onclick="produto.salvar()" id="btn1">Adicionar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
+            </div>
+        </div>    
+        
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>NOME</th>
+                    <th>VALOR</th>
+                    <th class="center">AÇÕES</th>
+                </thead>
+                <tbody id ="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
